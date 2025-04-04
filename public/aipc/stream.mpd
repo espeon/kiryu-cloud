@@ -10,8 +10,18 @@
           <S d="60060"/>
         </SegmentTimeline>
       </SegmentTemplate>
-      <Representation id="video/av01/1" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1920" height="1080" scanType="progressive" frameRate="30000/1001" bandwidth="3624922"/>
-      <Representation id="video/av01/2" codecs="av01.0.00M.10.0.110.01.01.01.0" width="854" height="480" scanType="progressive" frameRate="30000/1001" bandwidth="3315166"/>
+      <Representation id="video/av01/1" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1920" height="1080" scanType="progressive" frameRate="30000/1001" bandwidth="3534648"/>
+      <Representation id="video/av01/2" codecs="av01.0.00M.10.0.110.01.01.01.0" width="854" height="480" scanType="progressive" frameRate="30000/1001" bandwidth="2937122"/>
+    </AdaptationSet>
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1280" maxHeight="720">
+      <SegmentTemplate timescale="30000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1">
+        <SegmentTimeline>
+          <S d="90090" r="97"/>
+          <S d="60060"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="video/avc1/1" codecs="avc1.640029" width="640" height="360" scanType="progressive" frameRate="30000/1001" bandwidth="2405336"/>
+      <Representation id="video/avc1/2" codecs="avc1.640029" width="1280" height="720" scanType="progressive" frameRate="30000/1001" bandwidth="3509250"/>
     </AdaptationSet>
     <!-- Audio -->
     <AdaptationSet mimeType="audio/mp4" startWithSAP="1" segmentAlignment="true">
