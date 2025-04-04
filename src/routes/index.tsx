@@ -24,7 +24,7 @@ function App() {
         Like A Dragon series © SEGA. This is a fan site. No affiliation
         whatsoever with SEGA.
       </a>
-      <HLSPlayer src="/10/main.m3u8" onPlayStart={handlePlayStart} />
+      <HLSPlayer src="/aipc/main.m3u8" onPlayStart={handlePlayStart} />
     </main>
   );
 }

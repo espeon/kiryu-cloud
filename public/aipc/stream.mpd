@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT3.00S" mediaPresentationDuration="PT4M56.296S" type="static">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=2.0.0-641 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
+      <SegmentTemplate timescale="30000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1">
+        <SegmentTimeline>
+          <S d="90090" r="97"/>
+          <S d="60060"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="video/av01/1" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1920" height="1080" scanType="progressive" frameRate="30000/1001" bandwidth="3624922"/>
+      <Representation id="video/av01/2" codecs="av01.0.00M.10.0.110.01.01.01.0" width="854" height="480" scanType="progressive" frameRate="30000/1001" bandwidth="3315166"/>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet mimeType="audio/mp4" startWithSAP="1" segmentAlignment="true">
+      <SegmentTemplate timescale="44100" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1">
+        <SegmentTimeline>
+          <S d="88064" r="2"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064" r="6"/>
+          <S d="89088"/>
+          <S d="88064" r="5"/>
+          <S d="89088"/>
+          <S d="88064"/>
+          <S d="15168"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="audio/und/mp4a.40.2" codecs="mp4a.40.2" bandwidth="128163" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:mpegB:cicp:ChannelConfiguration" value="2"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
