@@ -21,7 +21,7 @@ function App() {
         href="https://www.youtube.com/watch?v=3UtoMcOFruY"
         className={`absolute bottom-0 z-20 hover:underline transition-color duration-1000 ml-4 ${showText ? "text-white/50" : "text-transparent"}`}
       >
-        Like A Dragon series © SEGA. This is a fan site. No affiliation
+        Like A Dragon series © SEGA. This fansite has no affiliation
         whatsoever with SEGA.
       </a>
       <HLSPlayer src="/aipc/main.m3u8" onPlayStart={handlePlayStart} />
